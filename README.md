@@ -43,19 +43,18 @@
 五、组测试
 ---
 1. 方法分组
-      @Test(groups="group1")
-      @Test(groups="group2")
-      @BeforeGroups("group1")
-      @AfterGroups("group1")
-      @BeforeGroups("group2")
-      @AfterGroups("group2")
-         
+   @Test(groups="group1")
+   @Test(groups="group2")
+   @BeforeGroups("group1")
+   @AfterGroups("group1")
+   @BeforeGroups("group2")
+   @AfterGroups("group2")
            ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnMethod.png)
 2. 类分组
-       类前使用标签声明：@Test(groups=“group1”)
-       测试套件xml文件如下：
+   类前使用标签声明：@Test(groups=“group1”)
+   测试套件xml文件如下：
               ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass.png)
-       运行结果
+   运行结果
               ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass-Result.jpg)
    
 六、依赖测试
