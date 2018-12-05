@@ -36,92 +36,63 @@
 三、套件测试
 
      1. 新建一个SuiteConfig.java，设置suite执行前和执行后操作
-
-     [质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_11-4-49.png]
-
+     ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-SuiteConfig.png)
+     ![Image text]()
+     
     2. 新建testng.xml文件
-
-     [质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_11-6-17.png]
-
-    3.运行结果
-
+      ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-testngxml.png)
      
 
 四、忽略测试
 
    本次测试，不想执行的测试用例
-
-
+    ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/ignore.png)
 
 五、组测试
 
-      1）方法分组
-
-           @Test(groups="group1")
-
+    1. 方法分组
+          @Test(groups="group1")
           @Test(groups="group2")
+          @BeforeGroups("group1")
+          @AfterGroups("group1")
+          @BeforeGroups("group2")
+          @AfterGroups("group2")
+         
+        运行结果
+        ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnMethod.png)
 
- @BeforeGroups("group1")
-
- @AfterGroups("group1")
-
- @BeforeGroups("group2")
-
- @AfterGroups("group2")
-
-
-
-      2）类分组
-
+     2. 类分组
        类前使用标签声明：@Test(groups=“group1”)
-
        测试套件xml文件如下：
-
-       [质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_12-29-55.png]
-
-     运行结果
-
-
+         ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass.png)
+       运行结果
+       ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass-Result.jpg)
+   
 六、依赖测试
 
    测试方法Ｂ执行的时候依赖测试方法Ａ，需要先执行方法Ａ，然后再执行方法Ｂ
-
-　@Test(dependsOnMethods = "testA")
-
-
-
-　
-
-
+　  @Test(dependsOnMethods = "testA")
+    ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/dependTest.png)
+   
 七、异常测试
 
-    什么时候需要用到异常测试？
-
-    期望结果就是一个异常的时候，传入某些参数，程序抛出异常
-
+  1. 什么时候需要用到异常测试？
+  2. 期望结果就是一个异常的时候，传入某些参数，程序抛出异常
     @Test(expectedExceptions = RuntimeException.class)
-
-
-
-
+    ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/exceprtionTest.png)
+    
 八、参数化
 
-    1）XML文件参数化
+   1. XML文件参数化
 
        测试类使用@Parameters({"name","age"}) 进行注释
-
        测试套件文件如下：
+       ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/prameter-xml.png)
 
-       [质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_13-45-43.png]
-
-    2）DataProvider参数化
-
-    测试方法指定dataProvider   @Test(dataProvider = "data")
-
-    编写dataProvider
-
-    [质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_13-55-18.png]
-
+   2. DataProvider参数化
+      测试方法指定dataProvider   @Test(dataProvider = "data")
+      编写dataProvider
+      ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/parameter-dataprovider.png)
 
 
 九、多线程测试
