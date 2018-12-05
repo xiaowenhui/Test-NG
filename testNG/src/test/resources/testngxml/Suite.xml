@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<suite  name="suite test">
+    <test name="支付测试">
+        <packages>
+            <package name="com.course.testng.suite.*" />
+        </packages>
+    </test>
+</suite>
