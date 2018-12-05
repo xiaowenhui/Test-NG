@@ -30,7 +30,7 @@
   3.  @BeforeMethod，@AfterMethod
 
   4.  @Test（用在类上表示执行类中所有方法，也可以在方法上表示执行该方法）
-
+  ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/testng%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F.png)
 
 
 三、套件测试
