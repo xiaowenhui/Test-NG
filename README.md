@@ -30,15 +30,19 @@
 
 三、套件测试
 ---
+
 1. 新建一个SuiteConfig.java，设置suite执行前和执行后操作
-                ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-SuiteConfig.png)
+![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-SuiteConfig.png)
+                
 2. 新建testng.xml文件
-                ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-testngxml.png)
+![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-testngxml.png)
      
+
 四、忽略测试
 ---
-本次测试，不想执行的测试用例
-               ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/ignore.png)
+
+1. 本次测试，不想执行的测试用例
+![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/ignore.png)
 
 五、组测试
 ---
