@@ -1,10 +1,10 @@
 # Test-NG
 更适合测试人员使用
-
 比junit覆盖功能更全面，TestNG更适合复杂的集成测试
 
 
 一、maven使用，如下
+---
 
 <dependency>
 
@@ -19,6 +19,7 @@
 </dependency>
 
 二、常用测试标签和执行顺序
+---
 
   1.  @BeforeSuite，@AfterSuite 
 
@@ -30,7 +31,7 @@
 
   4.  @Test（用在类上表示执行类中所有方法，也可以在方法上表示执行该方法）
 
-[质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_11-16-31.png]
+
 
 三、套件测试
 
@@ -50,7 +51,6 @@
 
    本次测试，不想执行的测试用例
 
-[质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_11-25-2.png]
 
 
 五、组测试
@@ -69,7 +69,7 @@
 
  @AfterGroups("group2")
 
-[质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_12-15-11.png]
+
 
       2）类分组
 
@@ -81,9 +81,6 @@
 
      运行结果
 
-[质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_12-32-6.png]
-
-[质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_12-32-27.png]
 
 六、依赖测试
 
@@ -91,7 +88,7 @@
 
 　@Test(dependsOnMethods = "testA")
 
-[质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_12-43-45.png]
+
 
 　
 
@@ -104,7 +101,7 @@
 
     @Test(expectedExceptions = RuntimeException.class)
 
-[质量管控部 > 3.5-TestNG框架总结 > image2018-12-5_12-39-34.png]
+
 
 
 八、参数化
