@@ -1,27 +1,24 @@
 # Test-NG
 
-1. 和junit比较
+和junit比较
 ---
      更适合测试人员使用
      比junit覆盖功能更全面，TestNG更适合复杂的集成测试
 
-2. testNG知识目录
+testNG知识目录
 ---
-    2.1  maven使用
-    2.2  常用测试标签和执行顺序
-    2.3  套件测试
-    2.4  忽略测试
-    2.5  组测试(class,method)
-    2.6  依赖测试
-    2.7  异常测试
-    2.8  参数化(xml,DataProvider)
-    2.9  多线程
-    2.10  监听器
-    2.11  测试报告
-
-
-
-
+    1  maven使用
+    2  常用测试标签和执行顺序
+    3  套件测试
+    4  忽略测试
+    5  组测试(class,method)
+    6  依赖测试
+    7  异常测试
+    8  参数化(xml,DataProvider)
+    9  多线程
+    10  监听器
+    11  测试报告
+    
 一、maven使用，如下
 ---
 
@@ -51,17 +48,17 @@
 ---
 
 1. 新建一个SuiteConfig.java，设置suite执行前和执行后操作
-![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-SuiteConfig.png)
+     ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-SuiteConfig.png)
                 
 2. 新建testng.xml文件
-![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-testngxml.png)
+     ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-testngxml.png)
      
 
 四、忽略测试
 ---
 
 1. 本次测试，不想执行的测试用例
-![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/ignore.png)
+     ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/ignore.png)
 
 五、组测试
 ---
@@ -72,13 +69,13 @@
    @AfterGroups("group1")
    @BeforeGroups("group2")
    @AfterGroups("group2")
-           ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnMethod.png)
+   ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnMethod.png)
 2. 类分组
    类前使用标签声明：@Test(groups=“group1”)
    测试套件xml文件如下：
-              ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass.png)
+          ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass.png)
    运行结果
-              ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass-Result.jpg)
+          ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass-Result.jpg)
    
 六、依赖测试
 ---
