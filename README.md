@@ -36,11 +36,11 @@
 三、套件测试
 
      1. 新建一个SuiteConfig.java，设置suite执行前和执行后操作
-     ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-SuiteConfig.png)
-     ![Image text]()
-     
+      ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-SuiteConfig.png)
+      
+    
     2. 新建testng.xml文件
-      ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-testngxml.png)
+      ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-testngxml.png)
      
 
 四、忽略测试
@@ -59,14 +59,14 @@
           @AfterGroups("group2")
          
         运行结果
-        ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnMethod.png)
+        ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnMethod.png)
 
      2. 类分组
        类前使用标签声明：@Test(groups=“group1”)
        测试套件xml文件如下：
-         ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass.png)
+         ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass.png)
        运行结果
-       ![Image text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass-Result.jpg)
+       ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass-Result.jpg)
    
 六、依赖测试
 
