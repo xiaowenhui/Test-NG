@@ -35,11 +35,11 @@
 
 三、套件测试
 
-     1. 新建一个SuiteConfig.java，设置suite执行前和执行后操作
+   1. 新建一个SuiteConfig.java，设置suite执行前和执行后操作
       ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-SuiteConfig.png)
       
     
-    2. 新建testng.xml文件
+   2. 新建testng.xml文件
       ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/suite-testngxml.png)
      
 
@@ -50,7 +50,7 @@
 
 五、组测试
 
-    1. 方法分组
+  1. 方法分组
           @Test(groups="group1")
           @Test(groups="group2")
           @BeforeGroups("group1")
@@ -58,10 +58,10 @@
           @BeforeGroups("group2")
           @AfterGroups("group2")
          
-        运行结果
-        ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnMethod.png)
+   运行结果
+           ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnMethod.png)
 
-     2. 类分组
+  2. 类分组
        类前使用标签声明：@Test(groups=“group1”)
        测试套件xml文件如下：
          ![Image_text](https://github.com/xiaowenhui/testNG-learn/blob/master/images/groupOnClass.png)
